@@ -1,0 +1,179 @@
+<html>
+
+
+	<head>
+	
+		<title> Hello TOEX </title>
+		
+		<link rel="icon" type="image/x-icon" href="/images/toeX.png">
+		
+
+
+		<style>
+
+
+
+			body {
+
+			font-family:"Century Gothic", sans-serif;						
+
+			}
+
+
+			#navbar {
+			
+			position: absolute;
+			left: 0%;
+			top: 0%;
+			height: 10%;
+			width: 100%;
+			background: linear-gradient(to left, #ff9933 0%, #ff99cc 100%);
+			}
+			
+			#navtable {
+			
+			position: absolute;
+			top: 10%;
+			left: 5%;
+			height: 80%;
+			width: 90%;
+			text-align: center;
+			font-size: 22px;
+			
+			}
+			
+			#sidebar {
+			
+			position: absolute;
+			left: 0%;
+			top: 10%;
+			height: 90%;
+			width: 100%;
+			background: linear-gradient(to top left, #ff9933 0%, #ff99cc 100%);
+			z-index: -1;
+			}
+			
+			
+			
+			#pagecontent {
+			
+			position: absolute;
+			left: 2%;
+			top: 10%;
+			height: 90%;
+			width: 98%;
+			background-color: #404040;
+			color: white;
+			text-align: center;
+			}
+
+			.searchbut {
+			
+			width: 17%;
+			height: 5%;
+			background: linear-gradient(to left, #808080 0%, #3d2932 100%);
+			border: 1px solid darkgrey;
+			border-radius: 5px;
+			color: white;
+			
+			}
+			
+			
+			.searchbut:hover {
+			
+			width: 17%;
+			height: 5%;
+			background: linear-gradient(to left, #808080 0%, #3d2932 100%);
+			border: 2px solid orange;
+			border-radius: 5px;
+			color: orange;
+			
+			}
+
+
+
+		</style>
+	
+	
+		
+	</head>
+	
+	
+	
+	
+	<body>
+	
+		
+		
+		<div id = "navbar">
+		
+			<table id = "navtable">
+
+			<td class="navrow"><a style="color: white;" href="input.html">Calculation App</a></td>
+			
+			<tr>
+			
+
+				
+			
+			</tr>
+			
+			</table>
+		
+		</div>
+		
+		
+		<div id = "sidebar">
+		
+			<img src="/images/toeX2.png" style="left: 0%; top: 0%; width: 2%; z-index=100;">
+		<div style="height: 100%; width: 100%; opacity: 0.75; background-color: black;"></div>
+		</div>
+		
+		
+		
+		
+		<div id = "pagecontent">
+		
+			<br>
+			
+			<h1> Enter two numbers </h1>
+			
+			<br>
+			
+			<img src='/images/whitetoex.png' style = "width:25%;">
+
+	<br><br>	<br><br>
+
+
+
+
+        <input id="num1" type="number"> +
+        <input id="num2" type="number">
+<br><br>
+        <button class="searchbut" onclick="submit_addition()">Calculate</button>
+
+
+		
+		</div>
+		
+	
+<script>
+
+function submit_addition() {
+
+let number1 = document.getElementById('num1').value;
+let number2 = document.getElementById('num2').value;
+
+
+location.href = "/result/q=" + number1 + "&" + number2;
+
+}
+
+</script>	
+
+		
+		
+	</body>
+
+
+</html>
